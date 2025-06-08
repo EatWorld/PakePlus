@@ -1,22 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PakePlus App</title>
-        <script type="module" src="/main.js" defer></script>
-    </head>
+<!-- saved from url=(0037)https://zs.bb35.com/index/index/index -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>蚌埠市房屋征收信息系统</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="征迁管理">
+  <link rel="shortcut icon" href="https://zs.bb35.com/favicon.ico">
+  <!-- Bootstrap -->
+  <link href="./蚌埠市房屋征收信息系统_files/adminlte.css" rel="stylesheet">
+  <script src="./蚌埠市房屋征收信息系统_files/jquery.min.js.下载"></script>
+  <script src="./蚌埠市房屋征收信息系统_files/bootstrap.min.js.下载"></script>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .topic {
+    background-image: url(/static/images/res-bg-1.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: #4d80a1;*/
+  }
+  
+  .topic .grid-normal {
+    position: relative;
+    height: 800px
+  }
 
-    <body>
-        <main class="container">
-            <h1>Welcome to PakePlus</h1>
+  .topic .grid-normal .title{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2.5em;
+  }
 
-            <form class="row" id="greet-form">
-                <input id="greet-input" placeholder="Enter a name..." />
-                <button type="submit">Greet</button>
-            </form>
-            <p id="greet-msg"></p>
-        </main>
-    </body>
-</html>
+  .footer-bottom{ width: 100%; margin-top:80px; text-align:center; line-height:28px; color:#999999}
+</style></head>
+
+<body size-sensor-id="1" style="position: relative;">
+<div class="topic">
+  <div class="grid-normal" style="height: 1277px;">
+    <div class="row">
+      <div class="title">
+        蚌埠市房屋征收信息系统
+      </div>
+      <script src="./蚌埠市房屋征收信息系统_files/canvas-nest.js.下载" type="text/javascript" pointcolor="255,255,255" color="255,255,255" opacity="0.7" count="200"></script>
+    </div>
+    <div class="row">
+      <div style="margin: 0 auto;">
+        <div style="text-align: center" id="login_qrcode_container"><iframe src="./蚌埠市房屋征收信息系统_files/qrconnect.html" frameborder="0" scrolling="no" width="300px" height="400px"></iframe></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer-bottom">
+        Copyright&nbsp;©&nbsp;1998&nbsp;-&nbsp;
+        <script>
+          var year = "";
+          mydate = new Date();
+          myyear = mydate.getYear();
+          year = (myyear > 200) ? myyear : 1900 + myyear;
+          document.write(year);
+        </script>2025
+        &nbsp;&nbsp;版权所有&nbsp;&nbsp;|&nbsp; 蚌埠市征迁拆违办 | 蚌埠市英路商务科技有限公司<br>
+        <p>皖ICP备13008107号-1 皖公网安备34030002020331号</p>
+      </div>
+    </div>
+  </div>
+</div><canvas width="2552" height="1277" style="display: block; position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; overflow: hidden; pointer-events: none; opacity: 0.7;"></canvas>
+
+
+
+<script src="./蚌埠市房屋征收信息系统_files/wxLogin.js.下载"></script>
+<script>
+  $(function () {
+    //防止被包含
+    try{
+      top.location.hostname;
+      if (top.location.hostname != window.location.hostname) {
+        top.location.href =window.location.href;
+      }
+    }
+    catch(e){
+      top.location.href = window.location.href;
+    }
+    
+    $(".grid-normal").height($(window).height())
+    
+    let obj = new WxLogin({
+      self_redirect: false,
+      id: "login_qrcode_container",
+      appid: "wx38b91e8f3d327ba9",
+      scope: "snsapi_login",
+      redirect_uri: "https://zs.bb35.com/index/open_auth/wechat",
+      state: "zs",
+      style: "width: 100px;",
+      href: "https://www.bb35.com/static/css/index_qrcode.css"
+    });
+    $('#login_qrcode_container').show();
+  })
+</script></body></html>
